@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="background_color">#1a1a1a</color>
+  <color name="tint_color">#fafafa</color>
+  <color name="element_background_color">#1a1a1a</color>
+  <color name="element_selected_color">#1a1a1a</color>
+
+  <color name="teal_color">#00c2a3</color>
+  <color name="green_color">#4ba54f</color>
+  <color name="orange_color">#ff6100</color>
+
+  <color name="thumb_color">@android:color/white</color>
+  <color name="thumb_stroke_color">@android:color/darker_gray</color>
+
+  <color name="default_thumb_color">@android:color/white</color>
+  <color name="default_thumb_stroke_color">@android:color/darker_gray</color>
+
+  <color name="default_cv_color">@android:color/white</color>
+</resources>

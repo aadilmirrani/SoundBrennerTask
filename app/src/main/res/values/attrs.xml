@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="cw_thumbRadius" format="dimension" />
+    <attr name="cw_thumbColor" format="dimension" />
+    <attr name="cw_thumbStrokeColor" format="dimension" />
+    <attr name="cw_thumbColorCircleScale" format="dimension" />
+
+    <attr name="cv_radius" format="dimension" />
+    <attr name="cv_color" format="dimension" />
+
+    <declare-styleable name="ColorWheel">
+        <attr name="cw_thumbRadius" />
+        <attr name="cw_thumbColor" />
+        <attr name="cw_thumbStrokeColor" />
+        <attr name="cw_thumbColorCircleScale" />
+    </declare-styleable>
+
+    <declare-styleable name="ControllerView">
+        <attr name="cv_radius" />
+        <attr name="cv_color" />
+    </declare-styleable>
+
+</resources>

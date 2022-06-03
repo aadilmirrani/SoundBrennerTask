@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.activity.MainActivity">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.soundbrenner.colorwheeltask.ui.view.ColorWheel
+      android:id="@+id/cv_ma"
+      android:layout_width="0dip"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/activity_margin"
+      android:padding="@dimen/activity_margin"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/cv_ma_1" />
+
+    <com.soundbrenner.colorwheeltask.ui.view.ControllerView
+      android:id="@+id/cv_ma_1"
+      android:layout_width="@dimen/controller_wh"
+      android:layout_height="@dimen/controller_wh"
+      app:cv_color="@color/teal_color"
+      app:cv_radius="@dimen/controller_radius"
+      app:layout_constraintEnd_toStartOf="@id/cv_ma_2"
+      app:layout_constraintHorizontal_chainStyle="packed"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.soundbrenner.colorwheeltask.ui.view.ControllerView
+      android:id="@+id/cv_ma_2"
+      android:layout_width="@dimen/controller_wh"
+      android:layout_height="@dimen/controller_wh"
+      app:cv_color="@color/green_color"
+      app:cv_radius="@dimen/controller_radius"
+      app:layout_constraintEnd_toStartOf="@id/cv_ma_3"
+      app:layout_constraintStart_toEndOf="@id/cv_ma_1"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.soundbrenner.colorwheeltask.ui.view.ControllerView
+      android:id="@+id/cv_ma_3"
+      android:layout_width="@dimen/controller_wh"
+      android:layout_height="@dimen/controller_wh"
+      app:cv_color="@color/orange_color"
+      app:cv_radius="@dimen/controller_radius"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/cv_ma_2"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_chainStyle="packed" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
